@@ -24,13 +24,13 @@ if(window.File) {
             for (var i = 0; i < lineArr.length; i++) {
                 itemArr[i] = lineArr[i].split(",");
             }
-            var labelsValue = itemArr[0];
-            var stuData = itemArr[1];
-            var comData = itemArr[2];
+            //var labelsValue = itemArr[0];
+            var stuData = itemArr[0];
+            var comData = itemArr[1];
 
             // グラフ描画するデータを設定
             var data = {
-              labels: labelsValue,//["積極性", "論理思考", "コミュニケーション", "計画性", "○○力", "○○力", "○○力"],
+              labels: ["積極性", "論理思考", "コミュニケーション", "計画性", "○○力", "○○力", "○○力"],//labelsValue,
               datasets: [{
                 label: '自己評価',
                 backgroundColor: "rgba(153,255,51,0.1)",

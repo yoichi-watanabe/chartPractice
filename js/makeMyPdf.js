@@ -21,5 +21,8 @@ function createPdf(){
             font: defaultStyle
         }
     }
-    pdfMake.createPdf(docDefinition).open();
+
+    // PDF出力
+    //pdfMake.createPdf(docDefinition).open();
+    pdfMake.createPdf(docDefinition).download('feedback.pdf')
 }
